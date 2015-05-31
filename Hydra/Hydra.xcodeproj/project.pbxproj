@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B43420E1B1B5805003AA983 /* HYBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43420C1B1B5805003AA983 /* HYBMainViewController.swift */; };
+		2B43420F1B1B5805003AA983 /* HYBMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B43420D1B1B5805003AA983 /* HYBMainViewController.xib */; };
 		2BD383031B1AC28500570728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD383021B1AC28500570728 /* AppDelegate.swift */; };
-		2BD383051B1AC28500570728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD383041B1AC28500570728 /* ViewController.swift */; };
-		2BD383081B1AC28500570728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD383061B1AC28500570728 /* Main.storyboard */; };
 		2BD3830A1B1AC28500570728 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD383091B1AC28500570728 /* Images.xcassets */; };
 		2BD3830D1B1AC28500570728 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD3830B1B1AC28500570728 /* LaunchScreen.xib */; };
 		2BD383191B1AC28500570728 /* HydraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD383181B1AC28500570728 /* HydraTests.swift */; };
@@ -26,11 +26,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B43420C1B1B5805003AA983 /* HYBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBMainViewController.swift; path = BetaApp/HYBMainViewController.swift; sourceTree = "<group>"; };
+		2B43420D1B1B5805003AA983 /* HYBMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HYBMainViewController.xib; path = BetaApp/HYBMainViewController.xib; sourceTree = "<group>"; };
 		2BD382FD1B1AC28500570728 /* Hydra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hydra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD383011B1AC28500570728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BD383021B1AC28500570728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BD383041B1AC28500570728 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2BD383071B1AC28500570728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BD383091B1AC28500570728 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2BD3830C1B1AC28500570728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2BD383121B1AC28500570728 /* HydraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B43420B1B1B57F3003AA983 /* BetaApp */ = {
+			isa = PBXGroup;
+			children = (
+				2B43420C1B1B5805003AA983 /* HYBMainViewController.swift */,
+				2B43420D1B1B5805003AA983 /* HYBMainViewController.xib */,
+			);
+			name = BetaApp;
+			sourceTree = "<group>";
+		};
 		2BD382F41B1AC28500570728 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +86,8 @@
 		2BD382FF1B1AC28500570728 /* Hydra */ = {
 			isa = PBXGroup;
 			children = (
+				2B43420B1B1B57F3003AA983 /* BetaApp */,
 				2BD383021B1AC28500570728 /* AppDelegate.swift */,
-				2BD383041B1AC28500570728 /* ViewController.swift */,
-				2BD383061B1AC28500570728 /* Main.storyboard */,
 				2BD383091B1AC28500570728 /* Images.xcassets */,
 				2BD3830B1B1AC28500570728 /* LaunchScreen.xib */,
 				2BD383001B1AC28500570728 /* Supporting Files */,
@@ -192,8 +200,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD383081B1AC28500570728 /* Main.storyboard in Resources */,
 				2BD3830D1B1AC28500570728 /* LaunchScreen.xib in Resources */,
+				2B43420F1B1B5805003AA983 /* HYBMainViewController.xib in Resources */,
 				2BD3830A1B1AC28500570728 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD383051B1AC28500570728 /* ViewController.swift in Sources */,
+				2B43420E1B1B5805003AA983 /* HYBMainViewController.swift in Sources */,
 				2BD383031B1AC28500570728 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2BD383061B1AC28500570728 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BD383071B1AC28500570728 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2BD3830B1B1AC28500570728 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,6 +411,7 @@
 				2BD3831E1B1AC28500570728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BD3831F1B1AC28500570728 /* Build configuration list for PBXNativeTarget "HydraTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				2BD383211B1AC28500570728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
