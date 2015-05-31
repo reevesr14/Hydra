@@ -24,9 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        print(openBetaApp)
+        var mainViewController = UIViewController()
         
-        var mainViewController = HYBMainViewController(nibName: "HYBMainViewController", bundle: nil)
+        if (openBetaApp) {
+        
+            mainViewController = HYBMainViewController(nibName: "HYBMainViewController", bundle: nil)
+        } else {
+            
+            mainViewController = HYPMainViewController(nibName: "HYPMainViewController", bundle: nil)
+        }
         
         var navigationController = UINavigationController(rootViewController: mainViewController)
         
