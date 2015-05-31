@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2B43420E1B1B5805003AA983 /* HYBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43420C1B1B5805003AA983 /* HYBMainViewController.swift */; };
 		2B43420F1B1B5805003AA983 /* HYBMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B43420D1B1B5805003AA983 /* HYBMainViewController.xib */; };
+		2B4342131B1B58B8003AA983 /* HYPMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4342111B1B58B8003AA983 /* HYPMainViewController.swift */; };
+		2B4342141B1B58B8003AA983 /* HYPMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B4342121B1B58B8003AA983 /* HYPMainViewController.xib */; };
+		2B4342181B1B5A81003AA983 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B4342171B1B5A81003AA983 /* Settings.bundle */; };
 		2BD383031B1AC28500570728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD383021B1AC28500570728 /* AppDelegate.swift */; };
 		2BD3830A1B1AC28500570728 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD383091B1AC28500570728 /* Images.xcassets */; };
 		2BD3830D1B1AC28500570728 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD3830B1B1AC28500570728 /* LaunchScreen.xib */; };
@@ -28,6 +31,9 @@
 /* Begin PBXFileReference section */
 		2B43420C1B1B5805003AA983 /* HYBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBMainViewController.swift; path = BetaApp/HYBMainViewController.swift; sourceTree = "<group>"; };
 		2B43420D1B1B5805003AA983 /* HYBMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HYBMainViewController.xib; path = BetaApp/HYBMainViewController.xib; sourceTree = "<group>"; };
+		2B4342111B1B58B8003AA983 /* HYPMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYPMainViewController.swift; path = ProductionApp/HYPMainViewController.swift; sourceTree = "<group>"; };
+		2B4342121B1B58B8003AA983 /* HYPMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HYPMainViewController.xib; path = ProductionApp/HYPMainViewController.xib; sourceTree = "<group>"; };
+		2B4342171B1B5A81003AA983 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 		2BD382FD1B1AC28500570728 /* Hydra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hydra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD383011B1AC28500570728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BD383021B1AC28500570728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +71,15 @@
 			name = BetaApp;
 			sourceTree = "<group>";
 		};
+		2B4342101B1B589C003AA983 /* ProductionApp */ = {
+			isa = PBXGroup;
+			children = (
+				2B4342111B1B58B8003AA983 /* HYPMainViewController.swift */,
+				2B4342121B1B58B8003AA983 /* HYPMainViewController.xib */,
+			);
+			name = ProductionApp;
+			sourceTree = "<group>";
+		};
 		2BD382F41B1AC28500570728 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +101,7 @@
 		2BD382FF1B1AC28500570728 /* Hydra */ = {
 			isa = PBXGroup;
 			children = (
+				2B4342101B1B589C003AA983 /* ProductionApp */,
 				2B43420B1B1B57F3003AA983 /* BetaApp */,
 				2BD383021B1AC28500570728 /* AppDelegate.swift */,
 				2BD383091B1AC28500570728 /* Images.xcassets */,
@@ -98,6 +114,7 @@
 		2BD383001B1AC28500570728 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B4342171B1B5A81003AA983 /* Settings.bundle */,
 				2BD383011B1AC28500570728 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -202,7 +219,9 @@
 			files = (
 				2BD3830D1B1AC28500570728 /* LaunchScreen.xib in Resources */,
 				2B43420F1B1B5805003AA983 /* HYBMainViewController.xib in Resources */,
+				2B4342181B1B5A81003AA983 /* Settings.bundle in Resources */,
 				2BD3830A1B1AC28500570728 /* Images.xcassets in Resources */,
+				2B4342141B1B58B8003AA983 /* HYPMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +241,7 @@
 			files = (
 				2B43420E1B1B5805003AA983 /* HYBMainViewController.swift in Sources */,
 				2BD383031B1AC28500570728 /* AppDelegate.swift in Sources */,
+				2B4342131B1B58B8003AA983 /* HYPMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +393,7 @@
 				INFOPLIST_FILE = HydraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hydra.app/Hydra";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -388,7 +408,7 @@
 				INFOPLIST_FILE = HydraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hydra.app/Hydra";
+				TEST_HOST = "";
 			};
 			name = Release;
 		};
