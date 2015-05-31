@@ -13,10 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var openBetaApp:Bool {
+        get {
+            var betaLoad = NSUserDefaults.standardUserDefaults().boolForKey("hydra_enabled_preference")
+            return betaLoad
+        }
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        print(openBetaApp)
         
         var mainViewController = HYBMainViewController(nibName: "HYBMainViewController", bundle: nil)
         

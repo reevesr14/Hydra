@@ -5,20 +5,14 @@
 	<key>PreferenceSpecifiers</key>
 	<array>
 		<dict>
-			<key>Title</key>
-			<string>Group</string>
 			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>DefaultValue</key>
-			<true/>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Hydra Beta App</string>
 			<key>Key</key>
 			<string>hydra_enabled_preference</string>
-			<key>Title</key>
-			<string>Enabled</string>
-			<key>Type</key>
-			<string>Hydra Beta App</string>
+			<key>DefaultValue</key>
+			<false/>
 		</dict>
 	</array>
 	<key>StringsTable</key>
